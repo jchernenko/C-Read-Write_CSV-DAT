@@ -1,0 +1,40 @@
+Microsoft Windows [Version 10.0.22621.3296]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\jeffc>cd desktop
+
+C:\Users\jeffc\Desktop>gcc -o create.exe create.c
+
+C:\Users\jeffc\Desktop>gcc -o display.exe display.c
+
+C:\Users\jeffc\Desktop>create.exe
+To run program use: create.exe sourcefilename destinationfilename
+
+C:\Users\jeffc\Desktop>create.exe accounts.csv accounts.dat
+Error -source file 'accounts.csv' does not exist.
+
+C:\Users\jeffc\Desktop>create.exe accounts.csv accounts.dat
+Read/Write complete.
+
+C:\Users\jeffc\Desktop>create.exe accounts.csv accounts.dat
+Destination file 'accounts.dat' already exists. Overwrite? (Yes/No): yes
+Read/Write complete.
+
+C:\Users\jeffc\Desktop>display.exe
+To run program use: display.exe filename
+
+C:\Users\jeffc\Desktop>display.exe accounts.dat
+AccountNumber FirstName   LastName   AccountBalance LastPaymentAmount
+---------------------------------------------------------------------
+1001          Kramer      Cosmo             5827.48          1500.00
+1002          Jerry       Seinfeld          7500.00          1200.00
+1003          Elaine      Benes             4827.90           900.00
+1004          George      Constanza         3200.00           600.00
+1005          Homer       Simpson           1422.37           250.00
+1006          Marge       Simpson           3325.48           300.00
+1007          Bart        Simpson            980.50            50.00
+1008          Lisa        Simpson            887.25            30.00
+1009          Maggie      Simpson              0.00             0.00
+1010          Ned         Flanders         18600.00          2000.00
+
+C:\Users\jeffc\Desktop>
